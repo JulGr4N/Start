@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<title>Gr4N</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="startsida.css">
+</head>
+<body onload="startTime()">
+	<div id="content">
+		    <div id="clock">
+		    <script>
+		    function startTime() {
+			var today=new Date();
+			var h=today.getHours();
+			var m=today.getMinutes();
+			var s=today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('clock').innerHTML = h+":"+m+":"+s;
+			var t = setTimeout(function(){startTime()},500);
+		}
+		    function checkTime(i) {
+			if (i<10) {i = "0" + i};
+			return i;
+		}
+		    </script>
+	        </div>
+		<div id="row1">
+			            <table>
+			            <tr><td><a href="http://www.facebook.com">Facebook</a><td></tr>
+						<tr><td><a href="http://www.youtube.com">Youtube</a></td></tr>
+					    <tr><td><a href="http://www.twitch.tv">Twitch</a></td></tr>
+					    <tr><td><a href="http://www.idg.se">IDG</a></td></tr>
+						<tr><td><a href="http://www.twitch.tv/directory/game/Counter-Strike%3A%20Global%20Offensive">CS:GO</a></td></tr>
+						<tr><td><a href="http://www.twitch.tv/cohhcarnage">CohhCarnage</a></td></tr>					
+		                </table>
+		</div>
+		<div id="row2">
+			            <table>
+						<tr><td><a href="http://www.4chan.org/g/">/g/</a></td></tr>						
+						<tr><td><a href="http://www.4chan.org/b/">/b/</a></td></tr>
+						<tr><td><a href="http://www.4chan.org/mu/">/mu/</a></td></tr>
+						<td><a href="http://www.4chan.org/tv/">/tv/</a></td></tr>			
+					    </table>
+	   </div>
+	   </div>
+</body>
+</html>
