@@ -1,0 +1,85 @@
+body {
+   background-color: #780000;	
+}
+#content {
+	position: absolute;
+
+	left:400px;
+}
+#clock {
+	font-family: "Times New Roman", Times, serif;
+
+	color:orange;
+
+	font-size:70px;
+
+	background-color: #780000;
+
+    position: absolute;
+
+    top:50px;
+
+    left:125px;
+}
+
+
+
+
+#row2 {
+	position: absolute;
+
+	top:150px;
+
+	left:400px;
+
+	border:none;
+
+	width:100px;
+
+	height: 200px;	
+}
+
+
+
+
+#row1 {
+	position: absolute;
+
+	top:150px;
+
+	border: none;
+
+	width:100px;
+
+	height:200px;
+ }
+
+
+
+
+a {
+   color:#FF0000;
+
+   font-size: 20px;
+
+   font-weight: bold;
+
+   text-decoration: none;
+
+   font-family: "Courier New", Courier, monospace;
+
+   outline: none;
+  }
+
+
+
+
+ a:hover {
+   color:#B80000;
+
+   width:80px;
+
+   height:15px;
+
+   outline:none;
+  }
